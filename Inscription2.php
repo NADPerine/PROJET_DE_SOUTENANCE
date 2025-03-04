@@ -1,254 +1,342 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulaire d'Inscription</title>
-    <style>
-        body {
-            /* content: url("i2.webp"); */
-            background-image: url("i3.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-color: #1abc9c;
-            color: white;
-            font-family: Arial, sans-serif;
-            font-weight: bold;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        /* header {
-            background-color: #003b55;
-            padding: 15px;
-            font-size: 20px;
-            font-weight: bold;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        } */
-
-        /* Header and Navigation */
-        header {
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #2c3e50;
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-        }
-
-        .nav-links li a {
-            text-decoration: none;
-            color: #2c3e50;
-            font-weight: 500;
-        }
-
-        .nav-links li a:hover,
-        .search-icon:hover {
-            color: #1abc9c;
-        }
-
-        .search-icon {
-            font-size: 1.2rem;
-            cursor: pointer;
-        }
-
-
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-grow: 1;
-            margin: 100px 0;
-        }
-
-        .signup-box {
-            background-color: #002a3a;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-        }
-
-        label {
-            display: block;
-            text-align: left;
-            margin-bottom: 5px;
-        }
-
-        input[type="text"],
-        input[type="password"],
-        input[type="number"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: none;
-            border-radius: 5px;
-            opacity: 1;
-
-        }
-
-        .btn-container {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        input[type="submit"],
-        input[type="reset"] {
-            width: 48%;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            background-color: #0088a9;
-            color: white;
-            font-weight: bold;
-            opacity: 1;
-        }
-
-        input[type="reset"] {
-            background-color: #004f66;
-            opacity: 1;
-
-        }
-
-        form {
-            opacity: 0.6;
-            margin-top: 20%;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            padding: 3rem 2rem;
-            margin-top: 30%;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .footer-section h4 {
-            margin-bottom: 1rem;
-        }
-
-        .footer-section ul {
-            list-style: none;
-        }
-
-        .footer-section ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .footer-section ul li a:hover {
-            color: #1abc9c;
-        }
-
-        .copyright {
-            text-align: center;
-            padding-top: 1rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-    </style>
+    <title>Document</title>
 </head>
 
 <body>
-    <!-- Header with Navigation -->
-    <header>
-        <nav>
-            <div class="logo">TheBestVoyage</div>
-            <ul class="nav-links">
-                <li><a href="ACCUEIL4.php">Accueil</a></li>
-                <li><a href="#services">Nos Services</a></li>
-                <li><a href="#about">À Propos</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#search" class="search-icon">🔍</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="container">
-        <form class="signup-box">
-            <label for="nom">Nom</label>
-            <input type="text" id="nom" name="nom" required>
+    <!DOCTYPE html>
+    <html lang="fr">
 
-            <label for="prenom">Prénom</label>
-            <input type="text" id="prenom" name="prenom" required>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulaire d'Inscription</title>
+        <style>
+            body {
+                background-image: url("i3.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: #1abc9c;
+                color: white;
+                font-family: Arial, sans-serif;
+                font-weight: bold;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
 
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" required>
+            /* Header and Navigation */
+            header {
+                background-color: #fff;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                position: fixed;
+                width: 100%;
+                top: 0;
+                z-index: 1000;
+            }
 
-            <label for="tel">Tel</label>
-            <input type="number" id="tel" name="tel" required>
+            nav {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 1rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
 
-            <label for="password">Mot de passe</label>
-            <input type="password" id="password" name="password" required>
+            .logo {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: #2c3e50;
+                /* border-bottom: 3px solid #e74c3c; */
+                /* Liseré rouge sous le logo */
+            }
 
-            <p>Vous avez déjà un compte ? <a href="Connexion2.php">Se connecter</a></p>
+            .nav-links {
+                list-style: none;
+                display: flex;
+                gap: 2rem;
+            }
 
-            <div class="btn-container">
-                <input type="reset" value="SUPPRIMER">
-                <input type="submit" value="VALIDER">
-            </div>
-        </form>
-    </div>
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>TheBestVoyage</h4>
-                <p>Votre partenaire de voyage sûr et fiable.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Liens Utiles</h4>
-                <ul>
-                    <li><a href="#terms">Conditions d'Utilisation</a></li>
-                    <li><a href="#privacy">Politique de Confidentialité</a></li>
-                    <li><a href="#faq">FAQ</a></li>
+            .nav-links li a {
+                text-decoration: none;
+                color: #2c3e50;
+                /* Couleur par défaut */
+                font-weight: 500;
+                position: relative;
+                transition: color 0.3s;
+            }
+
+            /* Style pour les liens visités */
+            .nav-links li a:visited {
+                color: #e74c3c;
+                /* Rouge pour les liens visités */
+                opacity: 0.8;
+                /* Légère transparence pour différencier */
+            }
+
+            /* Style au survol (priorité sur :visited) */
+            .nav-links li a:hover {
+                color: #e74c3c;
+                /* Rouge au survol */
+                opacity: 1;
+                /* Pleine opacité au survol */
+            }
+
+            .nav-links li a::after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 2px;
+                background: #e74c3c;
+                /* Soulignement rouge */
+                bottom: -5px;
+                left: 0;
+                transition: width 0.3s;
+            }
+
+            .nav-links li a:hover::after {
+                width: 100%;
+            }
+
+            /* Exception pour l’icône de recherche (pas de :visited) */
+            .nav-links li a.search-icon {
+                font-size: 1.2rem;
+                cursor: pointer;
+            }
+
+            .nav-links li a.search-icon:hover {
+                color: #e74c3c;
+            }
+
+            
+
+            /* Container and Signup Box */
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-grow: 1;
+                margin: 120px 0;
+                /* Increased margin for better spacing */
+            }
+
+            .signup-box {
+                background-color: rgba(0, 42, 58, 0.95);
+                /* Slightly transparent for depth */
+                padding: 40px;
+                border-radius: 15px;
+                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+                width: 100%;
+                max-width: 450px;
+                /* Limited width for better readability */
+                text-align: left;
+            }
+
+            .signup-box h2 {
+                margin: 0 0 25px;
+                font-size: 24px;
+                text-align: center;
+                color: #fff;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 8px;
+                font-size: 14px;
+                color: #e0e0e0;
+            }
+
+            input[type="text"],
+            input[type="password"],
+            input[type="number"] {
+                width: 100%;
+                padding: 12px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                background-color: #fff;
+                font-size: 14px;
+                color: #333;
+                box-sizing: border-box;
+                transition: border-color 0.3s ease;
+            }
+
+            input[type="text"]:focus,
+            input[type="password"]:focus,
+            input[type="number"]:focus {
+                border-color: #1abc9c;
+                outline: none;
+            }
+
+            .btn-container {
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+                margin-top: 20px;
+            }
+
+            input[type="submit"],
+            input[type="reset"] {
+                width: 100%;
+                padding: 12px;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: bold;
+                text-transform: uppercase;
+                transition: background-color 0.3s ease;
+            }
+
+            input[type="submit"] {
+                background-color: #1abc9c;
+                color: white;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #16a085;
+            }
+
+            input[type="reset"] {
+                background-color: #7f8c8d;
+                color: white;
+            }
+
+            input[type="reset"]:hover {
+                background-color: #636e72;
+            }
+
+            .login-link {
+                text-align: center;
+                margin-top: 20px;
+                font-size: 14px;
+            }
+
+            .login-link a {
+                color: #1abc9c;
+                text-decoration: none;
+            }
+
+            .login-link a:hover {
+                text-decoration: underline;
+            }
+
+            /* Footer */
+            footer {
+                background-color: #2c3e50;
+                color: white;
+                padding: 3rem 2rem;
+                font-weight: normal;
+            }
+
+            .footer-content {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .footer-section h4 {
+                margin-bottom: 1rem;
+            }
+
+            .footer-section ul {
+                list-style: none;
+            }
+
+            .footer-section ul li a {
+                color: white;
+                text-decoration: none;
+            }
+
+            .footer-section ul li a:hover {
+                color: #1abc9c;
+            }
+
+            .copyright {
+                text-align: center;
+                padding-top: 1rem;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Header with Navigation (unchanged) -->
+        <header>
+            <nav>
+                <div class="logo">TheBestVoyage</div>
+                <ul class="nav-links">
+                    <li><a href="ACCUEIL5.php">Accueil</a></li>
+                    <li><a href="service.php">Nos Services</a></li>
+                    <li><a href="Apropos.php">À Propos</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="#search" class="search-icon">🔍</a></li>
                 </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Contact</h4>
-                <p>Email: contact@TheBestVoyage.com</p>
-                <p>Téléphone: +237 677138870</p>
-            </div>
-        </div>
-        <p class="copyright">© 2025 BusVoyage. Tous droits réservés.</p>
-    </footer>
-</body>
+            </nav>
+        </header>
 
-</html>
+        <!-- Improved Signup Form -->
+        <div class="container">
+            <form class="signup-box">
+                <h2>Inscription</h2>
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required placeholder="Entrez votre nom">
+
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" required placeholder="Entrez votre prénom">
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required placeholder="Entrez votre email">
+
+                <label for="tel">Téléphone</label>
+                <input type="number" id="tel" name="tel" required placeholder="Entrez votre numéro">
+
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" required placeholder="Choisissez un mot de passe">
+
+                <div class="btn-container">
+                    <input type="reset" value="Réinitialiser">
+                    <input type="submit" value="S'inscrire">
+                </div>
+
+                <p class="login-link">Vous avez déjà un compte ? <a href="Connexion3.php">Se connecter</a></p>
+            </form>
+        </div>
+
+        <!-- Footer (unchanged) -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>TheBestVoyage</h4>
+                    <p>Votre partenaire de voyage sûr et fiable.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens Utiles</h4>
+                    <ul>
+                        <li><a href="#terms">Conditions d'Utilisation</a></li>
+                        <li><a href="#privacy">Politique de Confidentialité</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@TheBestVoyage.com</p>
+                    <p>Téléphone: +237 677138870</p>
+                </div>
+            </div>
+            <p class="copyright">© 2025 BusVoyage. Tous droits réservés.</p>
+        </footer>
+    </body>
+
+    </html>
