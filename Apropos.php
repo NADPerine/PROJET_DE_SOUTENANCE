@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Réservation de Bus - Destinations</title>
+    <title>Ma Réservation de Bus - À Propos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -24,108 +24,56 @@
                 <li><a href="Apropos.php">À Propos</a></li>
                 <li><a href="contact.php">Contact</a></li>
                 <li><a href="TableauBordClient.php">Tableau de bord</a></li> <!-- Ajout du lien Tableau de bord -->
+
             </ul>
         </nav>
     </header>
 
-    <!-- Destinations Main Section -->
-    <section class="destinations-page">
-        <div class="destinations-header">
-            <h1>Nos Destinations</h1>
-            <p>Explorez nos trajets et découvrez des destinations incroyables à travers le Cameroun.</p>
+    <!-- About Main Section -->
+    <section class="about-page">
+        <div class="about-hero">
+            <h1>Qui Sommes-Nous ?</h1>
+            <h2>The Best Voyage :</h2>
+            <p>Votre compagnon pour des trajets sûrs et confortables au Cameroun.</p>
         </div>
 
-        <!-- Search Bar for Destinations -->
-        <div class="destination-search">
-            <form>
-                <input type="text" placeholder="Rechercher une destination" required>
-                <button type="submit">Rechercher</button>
-            </form>
+        <!-- About Content -->
+        <div class="about-content">
+            <div class="about-card">
+                <h2>Notre Origine</h2>
+                <p>Lancée en 2010 avec seulement 5 bus, *TheBestVoyage* s’est imposée comme un acteur majeur du transport interurbain grâce à une vision centrée sur la sécurité et l’accessibilité.</p>
+            </div>
+            <div class="about-card">
+                <h2>Ce Que Nous Faisons</h2>
+                <p>Nous connectons plus de 20 villes avec une flotte moderne, des conducteurs qualifiés et une plateforme de réservation simple pour rendre vos voyages sans tracas.</p>
+            </div>
+            <div class="about-card">
+                <h2>Notre Engagement</h2>
+                <p>Innover pour un avenir durable avec des bus écologiques et offrir une expérience client exceptionnelle à chaque trajet.</p>
+            </div>
         </div>
 
-        <!-- Destinations Grid -->
-        <div class="destinations-grid">
-            <div class="destination-card">
-                <img src="yaounde.jpeg" alt="Yaoundé">
-                <h3>Yaoundé</h3>
-                <p>Découvrez la capitale politique avec ses collines verdoyantes et son riche patrimoine culturel.</p>
-                <div class="destination-buttons">
-                    <a href="#" class="btn-secondary">En savoir plus</a>
-                    <a href="Connexion3.php" class="btn-primary">Réserver</a>
-                </div>
+        <!-- Stats Section -->
+        <div class="about-stats">
+            <div class="stat-item">
+                <h3>10+</h3>
+                <p>Années d’expérience</p>
             </div>
-            <div class="destination-card">
-                <img src="Douala.jpeg" alt="Douala">
-                <h3>Douala</h3>
-                <p>Explorez le cœur économique avec ses marchés animés et son ambiance vibrante.</p>
-                <div class="destination-buttons">
-                    <a href="#" class="btn-secondary">En savoir plus</a>
-                    <a href="Connexion3.php" class="btn-primary">Réserver</a>
-                </div>
+            <div class="stat-item">
+                <h3>20+</h3>
+                <p>Villes desservies</p>
             </div>
-            <div class="destination-card">
-                <img src="bafoussam.jpeg" alt="Bafoussam">
-                <h3>Bafoussam</h3>
-                <p>Profitez des paysages montagneux et de la culture riche des hauts plateaux.</p>
-                <div class="destination-buttons">
-                    <a href="#" class="btn-secondary">En savoir plus</a>
-                    <a href="Connexion3.php" class="btn-primary">Réserver</a>
-                </div>
+            <div class="stat-item">
+                <h3>1000+</h3>
+                <p>Passagers par mois</p>
             </div>
-            <div class="destination-card">
-                <img src="kribi.jpeg" alt="Kribi">
-                <h3>Kribi</h3>
-                <p>Détendez-vous sur les plages de sable blanc et admirez les chutes de la Lobé.</p>
-                <div class="destination-buttons">
-                    <a href="#" class="btn-secondary">En savoir plus</a>
-                    <a href="Connexion3.php" class="btn-primary">Réserver</a>
-                </div>
-            </div>
-            <div class="destination-card">
-                <img src="bamenda.jpeg" alt="Bamenda">
-                <h3>Bamenda</h3>
-                <p>Vivez l’expérience des hauts plateaux anglophones et de leurs traditions uniques.</p>
-                <div class="destination-buttons">
-                    <a href="#" class="btn-secondary">En savoir plus</a>
-                    <a href="Connexion3.php" class="btn-primary">Réserver</a>
-                </div>
-            </div>
-            <div class="destination-card">
-                <img src="garoua.jpeg" alt="Garoua">
-                <h3>Garoua</h3>
-                <p>Plongez dans le nord avec ses parcs naturels et son climat sahélien.</p>
-                <div class="destination-buttons">
-                    <a href="#" class="btn-secondary">En savoir plus</a>
-                    <a href="Connexion3.php" class="btn-primary">Réserver</a>
-                </div>
-            </div>
-            <div class="destination-card">
-                <img src="buea.jpeg" alt="Buea">
-                <h3>Buea</h3>
-                <p>Explorez la ville au pied du mont Cameroun, idéale pour les amateurs de randonnée.</p>
-                <div class="destination-buttons">
-                    <a href="#" class="btn-secondary">En savoir plus</a>
-                    <a href="Connexion3.php" class="btn-primary">Réserver</a>
-                </div>
-            </div>
-            <div class="destination-card">
-                <img src="ebolowa.jpeg" alt="Ebolowa">
-                <h3>Ebolowa</h3>
-                <p>Découvrez une ville paisible entourée de forêts luxuriantes et de traditions authentiques.</p>
-                <div class="destination-buttons">
-                    <a href="#" class="btn-secondary">En savoir plus</a>
-                    <a href="Connexion3.php" class="btn-primary">Réserver</a>
-                </div>
-            </div>
-            <div class="destination-card">
-                <img src="ngaoundere.jpeg" alt="Ngaoundéré">
-                <h3>Ngaoundéré</h3>
-                <p>Visitez le carrefour du nord, connu pour ses hauts plateaux et son lac Tison.</p>
-                <div class="destination-buttons">
-                    <a href="#" class="btn-secondary">En savoir plus</a>
-                    <a href="Connexion3.php" class="btn-primary">Réserver</a>
-                </div>
-            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="about-cta">
+            <h2>Rejoignez Notre Aventure</h2>
+            <p>Prêt à voyager avec nous ? Réservez dès maintenant ou contactez-nous pour plus d’infos.</p>
+            <a href="Connexion3.php" class="btn-primary">Réserver un Trajet</a>
         </div>
     </section>
 
@@ -167,7 +115,7 @@
             color: #333;
         }
 
-        /* Header and Navigation (Styles ajustés pour la navbar mémorisée) */
+        /* Header and Navigation (Styles repris de la page précédente) */
         header {
             background-color: #fff;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -248,125 +196,112 @@
             cursor: pointer;
         }
 
-        /* Destinations Section */
-        .destinations-page {
+        /* About Section */
+        .about-page {
             padding: 8rem 2rem 5rem;
-            /* Ajustement pour le header fixe */
             background-color: #fff;
-            text-align: center;
         }
 
-        .destinations-header h1 {
+        .about-hero {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .about-hero h1 {
             font-size: 2.5rem;
             color: #2c3e50;
             margin-bottom: 1rem;
         }
 
-        .destinations-header p {
+        .about-hero p {
             font-size: 1.2rem;
             color: #7f8c8d;
-            margin-bottom: 3rem;
         }
 
-        .destination-search {
-            max-width: 600px;
-            margin: 0 auto 3rem;
-        }
-
-        .destination-search form {
-            display: flex;
-            gap: 1rem;
-        }
-
-        .destination-search input {
-            padding: 0.8rem;
-            border: 1px solid #ecf0f1;
-            border-radius: 5px;
-            flex: 1;
-            min-width: 200px;
-        }
-
-        .destination-search button {
-            padding: 0.8rem 2rem;
-            background-color: #1abc9c;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .destination-search button:hover {
-            background-color: #16a085;
-        }
-
-        .destinations-grid {
+        /* About Content */
+        .about-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 0 auto 4rem;
         }
 
-        .destination-card {
+        .about-card {
             background-color: #f8f9fa;
+            padding: 2rem;
             border-radius: 8px;
-            overflow: hidden;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            text-align: left;
+            text-align: center;
         }
 
-        .destination-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .destination-card h3 {
+        .about-card h2 {
+            font-size: 1.8rem;
             color: #2c3e50;
-            padding: 1rem;
-            font-size: 1.5rem;
+            margin-bottom: 1rem;
         }
 
-        .destination-card p {
+        .about-card p {
             color: #7f8c8d;
-            padding: 0 1rem 1rem;
+            font-size: 1rem;
         }
 
-        .destination-buttons {
+        /* Stats Section */
+        .about-stats {
+            background-color: #1abc9c;
+            padding: 3rem 2rem;
             display: flex;
-            gap: 1rem;
-            padding: 0 1rem 1rem;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            color: white;
+            margin-bottom: 4rem;
         }
 
-        .btn-primary,
-        .btn-secondary {
-            padding: 0.8rem 1.5rem;
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item p {
+            font-size: 1.1rem;
+        }
+
+        /* Call to Action */
+        .about-cta {
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+
+        .about-cta h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .about-cta p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 2rem;
+        }
+
+        .btn-primary {
+            padding: 1rem 2rem;
+            background-color: #1abc9c;
+            color: white;
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
             transition: background-color 0.3s;
-            text-align: center;
-        }
-
-        .btn-primary {
-            background-color: #1abc9c;
-            color: white;
-            flex: 1;
+            display: inline-block;
         }
 
         .btn-primary:hover {
             background-color: #16a085;
-        }
-
-        .btn-secondary {
-            background-color: #ecf0f1;
-            color: #2c3e50;
-            flex: 1;
-        }
-
-        .btn-secondary:hover {
-            background-color: #d5dbdb;
         }
 
         /* Footer styles (identique) */
@@ -430,25 +365,21 @@
                 display: flex;
             }
 
-            .destinations-page {
+            .about-page {
                 padding: 6rem 1rem 3rem;
             }
 
-            .destinations-header h1 {
+            .about-hero h1 {
                 font-size: 2rem;
             }
 
-            .destination-search form {
+            .about-stats {
                 flex-direction: column;
+                gap: 2rem;
             }
 
-            .destination-buttons {
-                flex-direction: column;
-            }
-
-            .btn-primary,
-            .btn-secondary {
-                width: 100%;
+            .about-cta h2 {
+                font-size: 1.5rem;
             }
         }
     </style>
@@ -463,7 +394,7 @@
             hamburger.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
         });
 
-        // Search Bar Functionality
+        // Search Bar Functionality (Repris de la page précédente)
         const searchBar = document.querySelector('.search-bar');
         const searchInput = document.querySelector('.search-input');
 

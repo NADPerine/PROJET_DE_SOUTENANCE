@@ -4,26 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Réservation de Bus - Contact</title>
+    <title>Ma Réservation de Bus - Contactez-Nous</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header with Navigation (Remplacé par la navbar mémorisée) -->
+    <!-- Header with Navigation -->
     <header>
         <nav>
             <div class="logo">TheBestVoyage</div>
-            <div class="search-bar">
-                <span class="search-icon">🔍</span>
-                <input type="text" class="search-input" placeholder="Rechercher...">
-            </div>
-            <button class="hamburger">☰</button>
             <ul class="nav-links">
                 <li><a href="ACCUEIL5.php">Accueil</a></li>
                 <li><a href="service.php">Nos Services</a></li>
                 <li><a href="Apropos.php">À Propos</a></li>
                 <li><a href="contact.php">Contact</a></li>
-                <li><a href="TableauBordClient.php">Tableau de bord</a></li> <!-- Ajout du lien Tableau de bord -->
+                <li><a href="#search" class="search-icon">🔍</a></li>
             </ul>
         </nav>
     </header>
@@ -32,7 +28,7 @@
     <section class="contact-hero">
         <div class="hero-content">
             <h1>Contactez-Nous</h1>
-            <p>Nous sommes là pour répondre à toutes vos questions et rendre votre voyage encore plus agréable.</p>
+            <p>Nous sommes à votre disposition pour toute question ou assistance concernant vos voyages depuis Douala.</p>
         </div>
     </section>
 
@@ -97,12 +93,12 @@
         </div>
     </section>
 
-    <!-- Footer (inchangé) -->
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-section">
                 <h4>TheBestVoyage</h4>
-                <p>Votre partenaire de voyage sûr et fiable.</p>
+                <p>Votre partenaire de confiance pour des voyages sûrs et confortables depuis Douala.</p>
             </div>
             <div class="footer-section">
                 <h4>Liens Utiles</h4>
@@ -114,11 +110,11 @@
             </div>
             <div class="footer-section">
                 <h4>Contact</h4>
-                <p>Email: contact@TheBestVoyage.com</p>
-                <p>Téléphone: +237 677138870</p>
+                <p><strong>Email:</strong> contact@thebestvoyage.com</p>
+                <p><strong>Téléphone:</strong> +237 677 138 870</p>
             </div>
         </div>
-        <p class="copyright">© 2025 BusVoyage. Tous droits réservés.</p>
+        <p class="copyright">© 2025 TheBestVoyage. Tous droits réservés.</p>
     </footer>
 
     <style>
@@ -126,18 +122,19 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Roboto', sans-serif;
         }
 
         body {
             line-height: 1.6;
             color: #333;
+            background-color: #f4f7fa;
         }
 
-        /* Header and Navigation (Styles ajustés pour la navbar mémorisée) */
+        /* Header and Navigation */
         header {
-            background-color: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            background-color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             position: fixed;
             width: 100%;
             top: 0;
@@ -145,18 +142,18 @@
         }
 
         nav {
-            max-width: 1300px;
+            max-width: 1280px;
             margin: 0 auto;
-            padding: 1.2rem 2rem;
+            padding: 1.5rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .logo {
-            font-size: 1.6rem;
-            font-weight: 600;
-            color: #1abc9c;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1a3c34;
         }
 
         .nav-links {
@@ -167,77 +164,45 @@
 
         .nav-links li a {
             text-decoration: none;
-            color: #2c3e50;
-            font-weight: 400;
-            font-size: 1rem;
+            color: #1a3c34;
+            font-weight: 500;
+            font-size: 1.1rem;
             transition: color 0.3s ease;
         }
 
         .nav-links li a:hover {
-            color: #1abc9c;
+            color: #e74c3c;
         }
 
-        .search-bar {
-            display: flex;
-            align-items: center;
-            background-color: #f8f9fa;
-            border-radius: 25px;
-            padding: 0.5rem 1rem;
-            max-width: 350px;
-            transition: all 0.3s ease;
-        }
-
-        .search-bar:hover {
-            background-color: #eef2f5;
-        }
-
-        .search-icon {
-            font-size: 1.1rem;
-            color: #2c3e50;
-            margin-right: 0.5rem;
-        }
-
-        .search-input {
-            border: none;
-            background: none;
-            outline: none;
-            font-size: 0.95rem;
-            color: #2c3e50;
-            width: 100%;
-        }
-
-        .hamburger {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            color: #2c3e50;
-            cursor: pointer;
+        .nav-links li a.search-icon {
+            font-size: 1.3rem;
         }
 
         /* Contact Hero Section */
         .contact-hero {
-            height: 60vh;
-            background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('bus-background.jpg') no-repeat center center/cover;
+            height: 50vh;
+            background: linear-gradient(rgba(26, 60, 52, 0.85), rgba(26, 60, 52, 0.85)), url('bus-background.jpg') no-repeat center center/cover;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            color: white;
+            color: #ffffff;
             padding-top: 80px;
-            /* Ajustement pour la navbar fixe */
         }
 
         .contact-hero .hero-content h1 {
-            font-size: 3rem;
+            font-size: 2.8rem;
+            font-weight: 700;
             margin-bottom: 1rem;
-            border-left: 5px solid #e74c3c;
-            padding-left: 1rem;
+            border-bottom: 3px solid #e74c3c;
+            padding-bottom: 0.5rem;
+            display: inline-block;
         }
 
         .contact-hero .hero-content p {
             font-size: 1.2rem;
-            max-width: 600px;
+            max-width: 700px;
+            font-weight: 400;
         }
 
         /* Contact Section */
@@ -397,33 +362,44 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
-        /* Footer (inchangé) */
+        /* Footer */
         footer {
-            background-color: #2c3e50;
-            color: white;
-            padding: 3rem 2rem;
+            background-color: #1a3c34;
+            color: #ffffff;
+            padding: 4rem 2rem;
         }
 
         .footer-content {
-            max-width: 1200px;
+            max-width: 1280px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 3rem;
         }
 
         .footer-section h4 {
-            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .footer-section p,
+        .footer-section ul li a {
+            font-size: 1rem;
+            color: #d0d8d6;
         }
 
         .footer-section ul {
             list-style: none;
         }
 
+        .footer-section ul li {
+            margin-bottom: 0.8rem;
+        }
+
         .footer-section ul li a {
-            color: white;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
 
         .footer-section ul li a:hover {
@@ -432,34 +408,16 @@
 
         .copyright {
             text-align: center;
-            padding-top: 1rem;
+            padding-top: 2rem;
+            font-size: 0.9rem;
+            color: #b0b8b6;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .hamburger {
-                display: block;
-            }
-
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                width: 100%;
-                background-color: #fff;
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-                padding: 1rem;
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-
             .contact-hero {
-                height: 50vh;
+                height: 40vh;
                 padding: 2rem;
             }
 
@@ -478,33 +436,18 @@
 
             .contact-info h2,
             .contact-form h2 {
-                font-size: 1.5rem;
+                font-size: 1.6rem;
             }
 
             .map-section h2 {
-                font-size: 1.5rem;
+                font-size: 1.6rem;
+            }
+
+            .nav-links {
+                gap: 1.5rem;
             }
         }
     </style>
-
-    <script>
-        // Hamburger Menu Functionality
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
-        });
-
-        // Search Bar Functionality
-        const searchBar = document.querySelector('.search-bar');
-        const searchInput = document.querySelector('.search-input');
-
-        searchBar.addEventListener('click', () => {
-            searchInput.focus();
-        });
-    </script>
 </body>
 
 </html>

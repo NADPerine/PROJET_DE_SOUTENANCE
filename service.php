@@ -6,19 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ma Réservation de Bus - Nos Services</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header with Navigation (Identique à la page d'accueil) -->
+    <!-- Header with Updated Navigation -->
     <header>
         <nav>
             <div class="logo">TheBestVoyage</div>
+            <div class="search-bar">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="search-input" placeholder="Rechercher...">
+            </div>
+            <button class="hamburger">☰</button>
             <ul class="nav-links">
                 <li><a href="ACCUEIL5.php">Accueil</a></li>
                 <li><a href="service.php">Nos Services</a></li>
                 <li><a href="Apropos.php">À Propos</a></li>
                 <li><a href="contact.php">Contact</a></li>
-                <li><a href="#search" class="search-icon">🔍</a></li>
+                <li><a href="TableauBordClient.php">Tableau de bord</a></li> <!-- Ajout du lien Tableau de bord -->
             </ul>
         </nav>
     </header>
@@ -60,7 +66,7 @@
                 <img src="the1.jpg" alt="Service client">
                 <h3>Service Client 24/7</h3>
                 <p>Une équipe dédiée pour répondre à vos questions et vous assister à tout moment.</p>
-                <a href="#contact" class="btn-secondary">Nous Contacter</a>
+                <a href="contact.php" class="btn-secondary">Nous Contacter</a>
             </div>
             <div class="service-card">
                 <img src="i9.jpg" alt="Suivi en temps réel">
@@ -78,7 +84,7 @@
         </div>
     </section>
 
-    <!-- Footer (Identique à la page d'accueil) -->
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-section">
@@ -103,12 +109,12 @@
     </footer>
 
     <style>
-        /* Réutilisation des styles existants de la page d'accueil */
+        /* Réutilisation des styles existants avec ajustements pour la navbar */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Poppins', sans-serif; /* Remplacé Montserrat par Poppins pour cohérence */
         }
 
         body {
@@ -119,7 +125,7 @@
         /* Header and Navigation */
         header {
             background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
             position: fixed;
             width: 100%;
             top: 0;
@@ -127,83 +133,79 @@
         }
 
         nav {
-            max-width: 1200px;
+            max-width: 1300px;
             margin: 0 auto;
-            padding: 1rem;
+            padding: 1.2rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #2c3e50;
-            /* border-bottom: 3px solid #e74c3c; */
-            /* Liseré rouge sous le logo */
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #1abc9c;
         }
 
         .nav-links {
             list-style: none;
             display: flex;
-            gap: 2rem;
+            gap: 2.5rem;
         }
 
         .nav-links li a {
             text-decoration: none;
             color: #2c3e50;
-            /* Couleur par défaut */
-            font-weight: 500;
-            position: relative;
-            transition: color 0.3s;
+            font-weight: 400;
+            font-size: 1rem;
+            transition: color 0.3s ease;
         }
 
-        /* Style pour les liens visités */
-        .nav-links li a:visited {
-            color: #e74c3c;
-            /* Rouge pour les liens visités */
-            opacity: 0.8;
-            /* Légère transparence pour différencier */
-        }
-
-        /* Style au survol (priorité sur :visited) */
         .nav-links li a:hover {
-            color: #e74c3c;
-            /* Rouge au survol */
-            opacity: 1;
-            /* Pleine opacité au survol */
+            color: #1abc9c;
         }
 
-        .nav-links li a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            background: #e74c3c;
-            /* Soulignement rouge */
-            bottom: -5px;
-            left: 0;
-            transition: width 0.3s;
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: #f8f9fa;
+            border-radius: 25px;
+            padding: 0.5rem 1rem;
+            max-width: 350px;
+            transition: all 0.3s ease;
         }
 
-        .nav-links li a:hover::after {
+        .search-bar:hover {
+            background-color: #eef2f5;
+        }
+
+        .search-icon {
+            font-size: 1.1rem;
+            color: #2c3e50;
+            margin-right: 0.5rem;
+        }
+
+        .search-input {
+            border: none;
+            background: none;
+            outline: none;
+            font-size: 0.95rem;
+            color: #2c3e50;
             width: 100%;
         }
 
-        /* Exception pour l’icône de recherche (pas de :visited) */
-        .nav-links li a.search-icon {
-            font-size: 1.2rem;
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #2c3e50;
             cursor: pointer;
-        }
-
-        .nav-links li a.search-icon:hover {
-            color: #e74c3c;
         }
 
         /* Services Section */
         .services-page {
             padding: 8rem 2rem 5rem;
-            /* Ajustement pour le header fixe */
             background-color: #fff;
             text-align: center;
         }
@@ -305,7 +307,7 @@
             padding: 1rem 2rem;
         }
 
-        /* Footer styles (identique) */
+        /* Footer styles */
         footer {
             background-color: #2c3e50;
             color: white;
@@ -346,6 +348,26 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color: #fff;
+                padding: 1rem;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
             .services-page {
                 padding: 6rem 1rem 3rem;
             }
@@ -357,12 +379,27 @@
             .services-cta h2 {
                 font-size: 1.5rem;
             }
-
-            .nav-links {
-                display: none;
-            }
         }
     </style>
+
+    <script>
+        // Hamburger Menu Functionality
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+        });
+
+        // Search Bar Functionality
+        const searchBar = document.querySelector('.search-bar');
+        const searchInput = document.querySelector('.search-input');
+
+        searchBar.addEventListener('click', () => {
+            searchInput.focus();
+        });
+    </script>
 </body>
 
 </html>

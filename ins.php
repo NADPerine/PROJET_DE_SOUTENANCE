@@ -318,33 +318,32 @@
                 <li><a href="service.php">Nos Services</a></li>
                 <li><a href="Apropos.php">À Propos</a></li>
                 <li><a href="contact.php">Contact</a></li>
-                <li><a href="TableauBordClient.php">Tableau de bord</a></li> <!-- Ajout du lien Tableau de bord -->
             </ul>
         </nav>
     </header>
 
     <!-- Signup Form -->
     <div class="container">
-        <form class="signup-box" method="POST" action="Traitement/traiter.php" enctype="multipart/form-data">
+        <form class="signup-box" method="POST" action="Traitement/inscription.php" enctype="multipart/form-data">
             <h2>Inscription</h2>
             <div class="form-grid">
                 <label for="nom">Nom</label>
-                <input type="text" id="nom" name="nom" placeholder="Votre nom">
+                <input type="text" id="nom" name="nom" required placeholder="Votre nom">
 
                 <label for="prenom">Prénom</label>
-                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
+                <input type="text" id="prenom" name="prenom" required placeholder="Votre prénom">
 
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Votre email">
+                <input type="email" id="email" name="email" required placeholder="Votre email">
 
                 <label for="tel">Téléphone</label>
-                <input type="tel" id="tel" name="tel" placeholder="Votre numéro" pattern="[0-9]{9,}" title="Numéro invalide">
+                <input type="tel" id="tel" name="tel" required placeholder="Votre numéro" pattern="[0-9]{9,}" title="Numéro invalide">
 
                 <label for="password">Mot de passe</label>
-                <input type="password" id="password" name="password" placeholder="Mot de passe" minlength="8">
+                <input type="password" id="password" name="password" required placeholder="Mot de passe" minlength="8">
 
-                <label for="photo">Ajouter une Photo</label>
-                <input type="file" id="photo" name="image" accept="image/*">
+                <label for="photo">Photo</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
 
                 <div class="btn-container">
                     <button type="reset">Réinitialiser</button>

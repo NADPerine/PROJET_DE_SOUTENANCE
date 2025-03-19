@@ -1,4 +1,4 @@
-<?php session_start();  ?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <!-- Header with Navigation (Remplacé par la navbar de la page précédente) -->
+    <!-- Header with Navigation -->
     <header>
         <nav>
             <div class="logo">TheBestVoyage</div>
@@ -24,7 +24,8 @@
                 <li><a href="service.php">Nos Services</a></li>
                 <li><a href="Apropos.php">À Propos</a></li>
                 <li><a href="contact.php">Contact</a></li>
-                <li><a href="TableauBordGerant.php">Tableau de bord</a></li> <!-- Ajout du lien Tableau de bord -->
+                <li><a href="TableauBordClient.php">Tableau de bord</a></li> <!-- Ajout du lien Tableau de bord -->
+
             </ul>
         </nav>
     </header>
@@ -266,7 +267,7 @@
             background-color: #fff;
         }
 
-        /* Header and Navigation (Styles ajustés pour correspondre à la page précédente) */
+        /* Header and Navigation */
         header {
             background-color: #fff;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -398,8 +399,6 @@
             right: 10px;
         }
 
-       
-
         .hero-content {
             position: absolute;
             top: 50%;
@@ -444,7 +443,6 @@
 
         .btn-primary:hover {
             background-color: #16a085;
-            /* box-shadow: 0 0 15px rgba(231, 76, 60, 0.8); */
         }
 
         .btn-secondary {
@@ -912,7 +910,7 @@
             hamburger.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
         });
 
-        // Search Bar Functionality (Ajusté pour correspondre à la page précédente)
+        // Search Bar Functionality
         const searchBar = document.querySelector('.search-bar');
         const searchInput = document.querySelector('.search-input');
 
